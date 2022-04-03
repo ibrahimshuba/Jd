@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 100%;
+  margin: auto;
+
+
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.column {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+<a id ="book-list" class="nav_link" href="index.html">Home List</a>
+
+<a id="open-featured" class="nav_link" href="featured.html">Featured</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br/>
+<br/>
+<br/>
+ <section id="featured" class="none">
+ <div class="row" id="featured">
+  <div class="column">
+    <div class="card">
+  
+       <img src="http://books.google.com/books/content?id=NTkzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api">
+		<br>
+		<br>
+      <div class="container">
+		  <label>Title</label> 
+        <h2>HTML5 for .NET Developers</h2>
+		<br>
+		  <label>Sub Title</label>
+        <h4>Single page web apps, JavaScript, and semantic markup</h4>
+		<br>
+		  <label>Author(s)</label>
+        <h4>Ian Gilman & James Jackson</h4>
+		<br>
+		  <label>Number of Pages</label>
+        <h4>416</h4>
+		<br>
+		  <label>Description</label>
+        <h5>Summary HTML5 for .NET Developers teaches professional software engineers how to integrate the latest HTML5 APIs and semantic markup into rich web applications using JavaScript, ASP.NET MVC, and WCF. Written from the .NET perspective, this book is full of practical applications and ways to connect the new web standards with your existing development practices About the Technology A shift is underway for Microsoft developers—to build web applications you'll need to integrate HTML5 features like Canvas-based graphics and the new JavaScript-driven APIs with familiar technologies like ASP.NET MVC and WCF. This book is designed for you. About this Book HTML5 for .NET Developers teaches you how to blend HTML5 with your current .NET tools and practices. You'll start with a quick overview of the new HTML5 features and the semantic markup model. Then, you'll systematically work through the JavaScript APIs as you learn to build single page web apps that look and work like desktop apps. Along the way, you'll get tips and learn techniques that will prepare you to build \"metro-style\" applications for Windows 8 and WP 8. This book assumes you're familiar with HTML, and concentrates on the intersection between new HTML5 features and Microsoft-specific technologies. Purchase of the print book comes with an offer of a free PDF, ePub, and Kindle eBook from Manning. Also available is all code from the book. What's Inside HTML5 from a .NET perspective Local storage, threading, and WebSockets Using JSON-enabled web services WCF services for HTML5 How to build single page web apps \"This book speaks directly to the interests and concerns of the .NET developer.\"—From the Forward by Scott Hanselman, Microsoft Table of Contents HTML5 and .NET A markup primer: classic HTML, semantic HTML, and CSS Audio and video controls Canvas The History API: 
+		Changing the game for MVC sites Geolocation and web mapping Web workers and drag and drop 
+		Websockets Local storage and state management Offline web applications</h5>
+     
+      </div>
+    </div>
+  </div>
+   <div class="column">
+    <div class="card">
+		
+        <img src="http://books.google.com/books/content?id=d3p4ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api">
+		<br>
+		<br>
+      <div class="container">
+		  <label>Title</label> 
+        <h2>HTML5</h2>
+		<br>
+		  <label>Sub Title</label>
+        <h4>The Missing Manual</h4>
+		<br>
+		  <label>Author(s)</label>
+        <h4>Matthew MacDonald</h4>
+		<br>
+		  <label>Number of Pages</label>
+        <h4>498</h4>
+		<br>
+		  <label>Description</label>
+        <h5>A guide to HTML5 covers such topics as markup, Web forms, audio and video,
+		Canvas, CSS3, data storage, offline applications, and JavaScript.</h5>
+     
+      </div>
+      </div>
+      </div>
+	    </div>
+
+<!-- End smartphone / tablet look -->
+</div>
+</section>
+
+    
+        <script src="script.js"></script>
+<!-- this code will make  myfunction method ready to use on page load-->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
